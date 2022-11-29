@@ -83,6 +83,7 @@ const SelectToken2 = ({ token }) => {
                     {!loading &&
                       listtokenPair.map((res) => (
                         <div
+                          key={res.address}
                           className="p-2 w-[350px] hover:bg-teal-300 hover:rounded-lg justify-center items-center"
                           onClick={() =>
                             selectId(

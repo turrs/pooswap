@@ -1,6 +1,7 @@
 import React from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAddRecentTransaction } from "@rainbow-me/rainbowkit";
+import Link from "next/link";
 
 const Headers = () => {
   const addRecentTransaction = useAddRecentTransaction();
@@ -9,7 +10,7 @@ const Headers = () => {
       <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div class="md:flex md:items-center md:gap-12">
-            <a class="block text-teal-600 dark:text-teal-600" href="/">
+            <Link href="/" class="block text-teal-600 dark:text-teal-600">
               <span class="sr-only">Home</span>
               <svg
                 class="h-8"
@@ -22,7 +23,7 @@ const Headers = () => {
                   fill="currentColor"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div class="hidden md:block">
