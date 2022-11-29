@@ -86,6 +86,7 @@ const SelectToken = ({ token }) => {
                       listtokenPair.map((res) => {
                         return (
                           <div
+                            key={res.symbol}
                             className="p-2  w-[350px] hover:bg-teal-300 hover:rounded-lg justify-center items-center"
                             onClick={() =>
                               selectId(
